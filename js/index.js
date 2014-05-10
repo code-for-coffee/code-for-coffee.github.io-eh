@@ -22,5 +22,5 @@ var app = new coffeebeanBlog({
 });
 
 var app.Controllers.init = function() {
-
+    console.log("[app.Controllers] init()");
 };

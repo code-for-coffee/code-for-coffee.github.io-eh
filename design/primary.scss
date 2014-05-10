@@ -3,13 +3,21 @@
 //	Main Stylesheet file for the conversion.
 //
 
-$background: #fff;
-$foreground: #000;
-$anchors: navy;
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Serif);
 
 $body-copy: 16ems;
-$primary-font: "Helvetica, Sans Serif";
+$primary-font: 'Droid Sans', sans-serif;
+$secondary-font: 'Droid Serif', serif;
+$background-image: "img/background_repeat.png";
+$background: darkslategray;
+$foreground: white;
+$anchors: navy;
 
+$body-copy-headline-text: 300%;
+$body-copy-b-head-text: 150%;
+$body-copy-nav-item-: 100%;
+$body-copy-normal-text: 100%;
+$body-copy-byline: 75%;
 
 $width-min: 320px;
 $width-bp2: 480px;
@@ -23,8 +31,25 @@ $width-max: 1600px;
 //
 //
 * {
-	font-size: $body-copy;
-	font-family: $primary-font;
+    color: $foreground;
+    font-size: $body-copy;
+    font-family: $primary-font;
+    background: $background url($background-image) repeat;
+}
+
+h1 {
+	font-size: $body-copy-headline-text;
+	font-weight: bold;
+}
+
+h2 {
+	font-size: $body-copy-b-head-text;
+	font-weight: bolder;
+}
+
+h3 {
+	font-size: $body-copy-b-head-text;
+	font-style: italic;
 }
 
 //
@@ -32,6 +57,4 @@ $width-max: 1600px;
 //
 //
 
-@media (min-width: 320px) {
-
-}
+@media (min-width: 320px) {}

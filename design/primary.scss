@@ -20,7 +20,7 @@ $body-copy-byline: 75%;
 $body-compound-background: #141313;
 $body-compound-warning: #7A4343;
 $body-compound-foreground-shadow: #2E3324;
-$body-compound-foreground: #93A373;
+$body-compound-foreground: #C6DB9B;
 $body-compound-validation: #F9BA1D;
 
 $width-min: 320px;
@@ -60,17 +60,20 @@ h3 {
 }
 
 //
+//	Primary Containers:
+//
+//
+
+#header {
+	border: 1px dashed;
+	width: 95%;
+	text-align: center;
+}
+
+//
 //	Min-width:
 //
 //
 
 @media (min-width: 320px) {}
 
-//
-//	Primary Containers:
-//
-//
-
-#header {
-	border: 1px dashed 
-}

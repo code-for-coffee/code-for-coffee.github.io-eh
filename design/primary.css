@@ -14,8 +14,7 @@ h1 {
 
 h2 {
   font-size: 150%;
-  font-weight: bolder;
-  margin-top: -2%; }
+  font-weight: bolder; }
 
 h3 {
   font-size: 150%;
@@ -27,11 +26,12 @@ h3 {
   #header .logo {
     float: left;
     display: block;
-    width: 40%; }
+    width: 40% h2;
+      width-margin-top: -5%; }
   #header .social {
     float: right;
     display: block;
-    width: 40% ul li;
+    width: 40% ul;
       width-list-style: none;
       width-display: inline;
       width-padding-right: 3%; }

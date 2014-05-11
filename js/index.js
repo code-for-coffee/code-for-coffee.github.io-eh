@@ -21,6 +21,12 @@ var app = new coffeebeanBlog({
     el: document.body
 });
 
+var app.init = function() {
+    app.router.start();
+}
+
 var app.Controllers.init = function() {
     console.log("[app.Controllers] init()");
 };
+
+app.init();

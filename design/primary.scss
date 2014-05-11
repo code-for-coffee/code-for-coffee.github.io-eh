@@ -52,7 +52,6 @@ h1 {
 h2 {
 	font-size: $body-copy-b-head-text;
 	font-weight: bolder;
-	margin-top: -2%;
 }
 
 h3 {
@@ -72,12 +71,15 @@ h3 {
 		float: left;
 		display: block;
 		width: 40%
+		h2 {
+			margin-top: -5%;
+		}
 	}
 	.social {
 		float: right;
 		display: block;
 		width: 40%
-		ul li {
+		ul {
 			list-style: none;
 			display: inline;
 			padding-right: 3%;

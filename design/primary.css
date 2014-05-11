@@ -31,7 +31,7 @@ h3 {
   #header .social {
     float: right;
     display: block;
-    width: 40% li;
+    width: 40% ul li;
       width-list-style: none;
       width-display: inline;
       width-padding-right: 3%; }

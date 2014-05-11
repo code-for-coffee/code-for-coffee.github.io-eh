@@ -23,5 +23,15 @@ h3 {
 
 #header {
   border: 1px dashed;
-  width: 95%;
-  text-align: center; }
+  width: 95%; }
+  #header .logo {
+    float: left;
+    display: block; }
+  #header .social {
+    float: right;
+    display: block; }
+    #header .social ul {
+      list-style: none;
+      display: inline; }
+      #header .social ul li {
+        padding-right: 3%; }

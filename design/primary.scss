@@ -30,11 +30,12 @@ $width-max: 1600px;
 //	Body
 //
 //
-* {
+body {
     color: $foreground;
     font-size: $body-copy;
     font-family: $primary-font;
     background: $background url($background-image) repeat;
+
 }
 
 h1 {
@@ -58,3 +59,12 @@ h3 {
 //
 
 @media (min-width: 320px) {}
+
+//
+//	Primary Containers:
+//
+//
+
+#header {
+	border: 1px dashed 
+}

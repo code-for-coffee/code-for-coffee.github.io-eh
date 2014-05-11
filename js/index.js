@@ -28,5 +28,3 @@ var app.init = function() {
 var app.Controllers.init = function() {
     console.log("[app.Controllers] init()");
 };
-
-app.init();

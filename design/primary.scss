@@ -71,14 +71,16 @@ h3 {
 	.logo {
 		float: left;
 		display: block;
+		width: 40%
 	}
 	.social {
 		float: right;
 		display: block;
+		width: 40%
 		ul {
-			list-style: none;
-			display: inline;
 			li {
+				list-style: none;
+				display: inline;
 				padding-right: 3%;
 			}
 		}

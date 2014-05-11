@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Serif);
 body {
-  color: #2e3324;
+  color: #93a373;
   font-size: 16ems;
   font-family: "Droid Sans", sans-serif;
   background: #141313 url("img/background_repeat.png") repeat; }
@@ -9,7 +9,7 @@ h1 {
   font-size: 300%;
   font-weight: bold;
   font-family: "Droid Serif", serif;
-  color: #2e3324;
+  color: #93a373;
   text-shadow: 0px 1px 0px #2e3324; }
 
 h2 {

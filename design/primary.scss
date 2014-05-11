@@ -52,6 +52,7 @@ h1 {
 h2 {
 	font-size: $body-copy-b-head-text;
 	font-weight: bolder;
+	margin-top: -2%;
 }
 
 h3 {
@@ -67,7 +68,21 @@ h3 {
 #header {
 	border: 1px dashed;
 	width: 95%;
-	text-align: center;
+	.logo {
+		float: left;
+		display: block;
+	}
+	.social {
+		float: right;
+		display: block;
+		ul {
+			list-style: none;
+			display: inline;
+			li {
+				padding-right: 3%;
+			}
+		}
+	}
 }
 
 //

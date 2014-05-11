@@ -14,11 +14,14 @@ h1 {
 
 h2 {
   font-size: 150%;
-  font-weight: bolder; }
+  font-weight: bolder;
+  margin-top: -2%; }
 
 h3 {
   font-size: 150%;
   font-style: italic; }
 
 #header {
-  border: 1px dashed; }
+  border: 1px dashed;
+  width: 95%;
+  text-align: center; }

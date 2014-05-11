@@ -9,8 +9,6 @@ $body-copy: 16ems;
 $primary-font: 'Droid Sans', sans-serif;
 $secondary-font: 'Droid Serif', serif;
 $background-image: "img/background_repeat.png";
-$background: darkslategray;
-$foreground: white;
 $anchors: navy;
 
 $body-copy-headline-text: 300%;
@@ -18,6 +16,12 @@ $body-copy-b-head-text: 150%;
 $body-copy-nav-item-: 100%;
 $body-copy-normal-text: 100%;
 $body-copy-byline: 75%;
+
+$body-compound-background: #141313;
+$body-compound-warning: #7A4343;
+$body-compound-foreground-shadow: #2E3324;
+$body-compound-foreground: #2E3324;
+$body-compound-validation: #F9BA1D;
 
 $width-min: 320px;
 $width-bp2: 480px;
@@ -31,16 +35,18 @@ $width-max: 1600px;
 //
 //
 body {
-    color: $foreground;
+    color: $body-compound-foreground;
     font-size: $body-copy;
     font-family: $primary-font;
-    background: $background url($background-image) repeat;
-
+    background: $body-compound-background url($background-image) repeat;
 }
 
 h1 {
 	font-size: $body-copy-headline-text;
 	font-weight: bold;
+	font-family: $secondary-font;
+	color: $body-compound-foreground;
+	text-shadow: 0px 1px 0px $body-compound-foreground-shadow;
 }
 
 h2 {

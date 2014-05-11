@@ -26,12 +26,12 @@ h3 {
   width: 95%; }
   #header .logo {
     float: left;
-    display: block; }
+    display: block;
+    width: 40%; }
   #header .social {
     float: right;
-    display: block; }
-    #header .social ul {
-      list-style: none;
-      display: inline; }
-      #header .social ul li {
-        padding-right: 3%; }
+    display: block;
+    width: 40% li;
+      width-list-style: none;
+      width-display: inline;
+      width-padding-right: 3%; }

@@ -1,0 +1,98 @@
+//
+//	primary.scss
+//	Main Stylesheet file for the conversion.
+//
+
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Serif);
+
+@body-copy: 16rem;
+@primary-font: 'Droid Sans', sans-serif;
+@secondary-font: 'Droid Serif', serif;
+@background-image: "img/background_repeat.png";
+@anchors: navy;
+
+@body-copy-headline-text: 300%;
+@body-copy-b-head-text: 150%;
+@body-copy-nav-item-: 100%;
+@body-copy-normal-text: 100%;
+@body-copy-byline: 75%;
+
+@body-compound-background: #141313;
+@body-compound-warning: #7A4343;
+@body-compound-foreground-shadow: #2E3324;
+@body-compound-foreground: #C6DB9B;
+@body-compound-validation: #F9BA1D;
+
+@width-min: 320px;
+@width-bp2: 480px;
+@width-bp3: 600px;
+@width-bp4: 768px;
+@width-bp5: 1200px;
+@width-max: 1600px;
+
+//
+//	Body
+//
+//
+body {
+  color: @body-compound-foreground;
+  font-size: @body-copy;
+  font-family: @primary-font;
+  background: @body-compound-background url(@background-image) repeat;
+}
+
+h1 {
+  font-size: @body-copy-headline-text;
+  font-weight: bold;
+  font-family: @secondary-font;
+  color: @body-compound-foreground;
+  text-shadow: 0px 1px 0px @body-compound-foreground-shadow;
+}
+
+h2 {
+  font-size: @body-copy-b-head-text;
+  font-weight: bolder;
+}
+
+h3 {
+  font-size: @body-copy-b-head-text;
+  font-style: italic;
+}
+
+//
+//	Primary Containers:
+//
+//
+
+#header {
+  border: 1px dashed;
+  width: 95%;
+  .logo {
+    float: left;
+    display: block;
+    width: 40%;
+
+    h2 {
+      margin-top: -5%;
+    }
+  }
+  .social {
+    float: right;
+    display: block;
+    width: 40%;
+
+    ul {
+      list-style: none;
+      display: inline;
+      padding-right: 3%;
+    }
+  }
+}
+
+//
+//	Min-width:
+//
+//
+
+@media (min-width: 320px) {}
+

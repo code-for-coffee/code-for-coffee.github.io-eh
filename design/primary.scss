@@ -5,7 +5,7 @@
 
 @import url(http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Serif);
 
-$body-copy: 16ems;
+$body-copy: 16rem;
 $primary-font: 'Droid Sans', sans-serif;
 $secondary-font: 'Droid Serif', serif;
 $background-image: "img/background_repeat.png";
@@ -70,7 +70,8 @@ h3 {
 	.logo {
 		float: left;
 		display: block;
-		width: 40%
+		width: 40%;
+
 		h2 {
 			margin-top: -5%;
 		}
@@ -78,7 +79,8 @@ h3 {
 	.social {
 		float: right;
 		display: block;
-		width: 40%
+		width: 40%;
+
 		ul {
 			list-style: none;
 			display: inline;

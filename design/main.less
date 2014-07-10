@@ -5,7 +5,7 @@
 
 @import url(http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Serif);
 
-@body-copy: 16rem;
+@body-copy: 1em;
 @primary-font: 'Droid Sans', sans-serif;
 @secondary-font: 'Droid Serif', serif;
 @background-image: "img/background_repeat.png";
@@ -20,7 +20,7 @@
 @body-compound-background: #141313;
 @body-compound-warning: #7A4343;
 @body-compound-foreground-shadow: #2E3324;
-@body-compound-foreground: #C6DB9B;
+@body-compound-foreground: #f9edd6;
 @body-compound-validation: #F9BA1D;
 
 @width-min: 320px;
@@ -65,7 +65,7 @@ h3 {
 //
 
 #header {
-  border: 1px dashed;
+  //border: 1px dashed;
   width: 95%;
   .logo {
     float: left;
@@ -76,14 +76,15 @@ h3 {
       margin-top: -5%;
     }
   }
+}
+#nav {
   .social {
     float: right;
     display: block;
     width: 40%;
-
     ul {
-      list-style: none;
-      display: inline;
+      list-style-type: none;
+      display: inline-block;
       padding-right: 3%;
     }
   }

@@ -1,0 +1,162 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'coffeescript' ]
+2 info using npm@1.4.3
+3 info using node@v0.10.26
+4 verbose cache add [ 'coffeescript', null ]
+5 verbose cache add name=undefined spec="coffeescript" args=["coffeescript",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'coffeescript',
+6 verbose parsed url   path: 'coffeescript',
+6 verbose parsed url   href: 'coffeescript' }
+7 silly lockFile f5fbc02e-coffeescript coffeescript
+8 verbose lock coffeescript /Users/codeforcoffee/.npm/f5fbc02e-coffeescript.lock
+9 silly lockFile f5fbc02e-coffeescript coffeescript
+10 silly lockFile f5fbc02e-coffeescript coffeescript
+11 verbose addNamed [ 'coffeescript', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile 62a8d146-coffeescript coffeescript@
+14 verbose lock coffeescript@ /Users/codeforcoffee/.npm/62a8d146-coffeescript.lock
+15 silly addNameRange { name: 'coffeescript', range: '*', hasData: false }
+16 verbose url raw coffeescript
+17 verbose url resolving [ 'https://registry.npmjs.org/', './coffeescript' ]
+18 verbose url resolved https://registry.npmjs.org/coffeescript
+19 info trying registry request attempt 1 at 02:15:48
+20 http GET https://registry.npmjs.org/coffeescript
+21 http 200 https://registry.npmjs.org/coffeescript
+22 silly registry.get cb [ 200,
+22 silly registry.get   { date: 'Sat, 10 May 2014 07:15:48 GMT',
+22 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
+22 silly registry.get     etag: '"4O45SRMFSDSUC7BN31AHY8W6U"',
+22 silly registry.get     'content-type': 'application/json',
+22 silly registry.get     via: '1.1 varnish',
+22 silly registry.get     'cache-control': 'max-age=1',
+22 silly registry.get     'content-length': '1522',
+22 silly registry.get     'accept-ranges': 'bytes',
+22 silly registry.get     age: '0',
+22 silly registry.get     'x-served-by': 'cache-v42-ASH, cache-c100-CHI',
+22 silly registry.get     'x-cache': 'MISS, MISS',
+22 silly registry.get     'x-cache-hits': '0, 0',
+22 silly registry.get     'x-timer': 'S1399706148.610652924,VS0,VS6,VE22,VE37',
+22 silly registry.get     vary: 'Accept',
+22 silly registry.get     'keep-alive': 'timeout=10, max=50',
+22 silly registry.get     connection: 'Keep-Alive' } ]
+23 silly addNameRange number 2 { name: 'coffeescript', range: '*', hasData: true }
+24 silly addNameRange versions [ 'coffeescript', [ '99.999.9999', '99.999.99999' ] ]
+25 verbose addNamed [ 'coffeescript', '99.999.99999' ]
+26 verbose addNamed [ '99.999.99999', '99.999.99999' ]
+27 silly lockFile 504f0aef-coffeescript-99-999-99999 coffeescript@99.999.99999
+28 verbose lock coffeescript@99.999.99999 /Users/codeforcoffee/.npm/504f0aef-coffeescript-99-999-99999.lock
+29 warn deprecated coffeescript@99.999.99999: You misspelled 'coffee-script'
+30 silly lockFile 69a21f5c-pt-coffeescript-99-999-99999-tgz https://registry.npmjs.org/coffeescript/-/coffeescript-99.999.99999.tgz
+31 verbose lock https://registry.npmjs.org/coffeescript/-/coffeescript-99.999.99999.tgz /Users/codeforcoffee/.npm/69a21f5c-pt-coffeescript-99-999-99999-tgz.lock
+32 verbose addRemoteTarball [ 'https://registry.npmjs.org/coffeescript/-/coffeescript-99.999.99999.tgz',
+32 verbose addRemoteTarball   '98f6a60410f827dcb06c067db5539c03c932ad75' ]
+33 info retry fetch attempt 1 at 02:15:48
+34 verbose fetch to= /var/folders/2l/7rhwn5ss5gg_hsp5thvh_mhr0000gn/T/npm-35035-ZlEY2789/1399706148749-0.8064241968095303/tmp.tgz
+35 http GET https://registry.npmjs.org/coffeescript/-/coffeescript-99.999.99999.tgz
+36 http 200 https://registry.npmjs.org/coffeescript/-/coffeescript-99.999.99999.tgz
+37 verbose tar unpack /var/folders/2l/7rhwn5ss5gg_hsp5thvh_mhr0000gn/T/npm-35035-ZlEY2789/1399706148749-0.8064241968095303/tmp.tgz
+38 silly lockFile 50f3f85f-48749-0-8064241968095303-package tar:///var/folders/2l/7rhwn5ss5gg_hsp5thvh_mhr0000gn/T/npm-35035-ZlEY2789/1399706148749-0.8064241968095303/package
+39 verbose lock tar:///var/folders/2l/7rhwn5ss5gg_hsp5thvh_mhr0000gn/T/npm-35035-ZlEY2789/1399706148749-0.8064241968095303/package /Users/codeforcoffee/.npm/50f3f85f-48749-0-8064241968095303-package.lock
+40 silly lockFile 619d371f-48749-0-8064241968095303-tmp-tgz tar:///var/folders/2l/7rhwn5ss5gg_hsp5thvh_mhr0000gn/T/npm-35035-ZlEY2789/1399706148749-0.8064241968095303/tmp.tgz
+41 verbose lock tar:///var/folders/2l/7rhwn5ss5gg_hsp5thvh_mhr0000gn/T/npm-35035-ZlEY2789/1399706148749-0.8064241968095303/tmp.tgz /Users/codeforcoffee/.npm/619d371f-48749-0-8064241968095303-tmp-tgz.lock
+42 silly gunzTarPerm modes [ '755', '644' ]
+43 silly gunzTarPerm extractEntry package.json
+44 silly gunzTarPerm extractEntry super-evil-script-omg-for-reals.js
+45 silly lockFile 50f3f85f-48749-0-8064241968095303-package tar:///var/folders/2l/7rhwn5ss5gg_hsp5thvh_mhr0000gn/T/npm-35035-ZlEY2789/1399706148749-0.8064241968095303/package
+46 silly lockFile 50f3f85f-48749-0-8064241968095303-package tar:///var/folders/2l/7rhwn5ss5gg_hsp5thvh_mhr0000gn/T/npm-35035-ZlEY2789/1399706148749-0.8064241968095303/package
+47 silly lockFile 619d371f-48749-0-8064241968095303-tmp-tgz tar:///var/folders/2l/7rhwn5ss5gg_hsp5thvh_mhr0000gn/T/npm-35035-ZlEY2789/1399706148749-0.8064241968095303/tmp.tgz
+48 silly lockFile 619d371f-48749-0-8064241968095303-tmp-tgz tar:///var/folders/2l/7rhwn5ss5gg_hsp5thvh_mhr0000gn/T/npm-35035-ZlEY2789/1399706148749-0.8064241968095303/tmp.tgz
+49 verbose tar pack [ '/Users/codeforcoffee/.npm/coffeescript/99.999.99999/package.tgz',
+49 verbose tar pack   '/var/folders/2l/7rhwn5ss5gg_hsp5thvh_mhr0000gn/T/npm-35035-ZlEY2789/1399706148749-0.8064241968095303/package' ]
+50 verbose tarball /Users/codeforcoffee/.npm/coffeescript/99.999.99999/package.tgz
+51 verbose folder /var/folders/2l/7rhwn5ss5gg_hsp5thvh_mhr0000gn/T/npm-35035-ZlEY2789/1399706148749-0.8064241968095303/package
+52 silly lockFile 50f3f85f-48749-0-8064241968095303-package tar:///var/folders/2l/7rhwn5ss5gg_hsp5thvh_mhr0000gn/T/npm-35035-ZlEY2789/1399706148749-0.8064241968095303/package
+53 verbose lock tar:///var/folders/2l/7rhwn5ss5gg_hsp5thvh_mhr0000gn/T/npm-35035-ZlEY2789/1399706148749-0.8064241968095303/package /Users/codeforcoffee/.npm/50f3f85f-48749-0-8064241968095303-package.lock
+54 silly lockFile 723fda53-escript-99-999-99999-package-tgz tar:///Users/codeforcoffee/.npm/coffeescript/99.999.99999/package.tgz
+55 verbose lock tar:///Users/codeforcoffee/.npm/coffeescript/99.999.99999/package.tgz /Users/codeforcoffee/.npm/723fda53-escript-99-999-99999-package-tgz.lock
+56 silly lockFile 50f3f85f-48749-0-8064241968095303-package tar:///var/folders/2l/7rhwn5ss5gg_hsp5thvh_mhr0000gn/T/npm-35035-ZlEY2789/1399706148749-0.8064241968095303/package
+57 silly lockFile 50f3f85f-48749-0-8064241968095303-package tar:///var/folders/2l/7rhwn5ss5gg_hsp5thvh_mhr0000gn/T/npm-35035-ZlEY2789/1399706148749-0.8064241968095303/package
+58 silly lockFile 723fda53-escript-99-999-99999-package-tgz tar:///Users/codeforcoffee/.npm/coffeescript/99.999.99999/package.tgz
+59 silly lockFile 723fda53-escript-99-999-99999-package-tgz tar:///Users/codeforcoffee/.npm/coffeescript/99.999.99999/package.tgz
+60 silly lockFile 2de3f72d-offeescript-99-999-99999-package /Users/codeforcoffee/.npm/coffeescript/99.999.99999/package
+61 verbose lock /Users/codeforcoffee/.npm/coffeescript/99.999.99999/package /Users/codeforcoffee/.npm/2de3f72d-offeescript-99-999-99999-package.lock
+62 silly lockFile 2de3f72d-offeescript-99-999-99999-package /Users/codeforcoffee/.npm/coffeescript/99.999.99999/package
+63 silly lockFile 2de3f72d-offeescript-99-999-99999-package /Users/codeforcoffee/.npm/coffeescript/99.999.99999/package
+64 verbose tar unpack /Users/codeforcoffee/.npm/coffeescript/99.999.99999/package.tgz
+65 silly lockFile bfb72c05-offeescript-99-999-99999-package tar:///Users/codeforcoffee/.npm/coffeescript/99.999.99999/package
+66 verbose lock tar:///Users/codeforcoffee/.npm/coffeescript/99.999.99999/package /Users/codeforcoffee/.npm/bfb72c05-offeescript-99-999-99999-package.lock
+67 silly lockFile 723fda53-escript-99-999-99999-package-tgz tar:///Users/codeforcoffee/.npm/coffeescript/99.999.99999/package.tgz
+68 verbose lock tar:///Users/codeforcoffee/.npm/coffeescript/99.999.99999/package.tgz /Users/codeforcoffee/.npm/723fda53-escript-99-999-99999-package-tgz.lock
+69 silly gunzTarPerm modes [ '755', '644' ]
+70 silly gunzTarPerm extractEntry package.json
+71 silly gunzTarPerm extractEntry super-evil-script-omg-for-reals.js
+72 silly lockFile bfb72c05-offeescript-99-999-99999-package tar:///Users/codeforcoffee/.npm/coffeescript/99.999.99999/package
+73 silly lockFile bfb72c05-offeescript-99-999-99999-package tar:///Users/codeforcoffee/.npm/coffeescript/99.999.99999/package
+74 silly lockFile 723fda53-escript-99-999-99999-package-tgz tar:///Users/codeforcoffee/.npm/coffeescript/99.999.99999/package.tgz
+75 silly lockFile 723fda53-escript-99-999-99999-package-tgz tar:///Users/codeforcoffee/.npm/coffeescript/99.999.99999/package.tgz
+76 verbose chmod /Users/codeforcoffee/.npm/coffeescript/99.999.99999/package.tgz 644
+77 verbose chown /Users/codeforcoffee/.npm/coffeescript/99.999.99999/package.tgz [ 501, 20 ]
+78 silly lockFile 69a21f5c-pt-coffeescript-99-999-99999-tgz https://registry.npmjs.org/coffeescript/-/coffeescript-99.999.99999.tgz
+79 silly lockFile 69a21f5c-pt-coffeescript-99-999-99999-tgz https://registry.npmjs.org/coffeescript/-/coffeescript-99.999.99999.tgz
+80 silly lockFile 504f0aef-coffeescript-99-999-99999 coffeescript@99.999.99999
+81 silly lockFile 504f0aef-coffeescript-99-999-99999 coffeescript@99.999.99999
+82 silly lockFile 62a8d146-coffeescript coffeescript@
+83 silly lockFile 62a8d146-coffeescript coffeescript@
+84 silly resolved [ { name: 'coffeescript',
+84 silly resolved     version: '99.999.99999',
+84 silly resolved     scripts: { preinstall: 'node super-evil-script-omg-for-reals.js' },
+84 silly resolved     readme: 'ERROR: No README data found!',
+84 silly resolved     _id: 'coffeescript@99.999.99999',
+84 silly resolved     dist: { shasum: '42d3b996d93bed19219f63d388a563f34ec49366' },
+84 silly resolved     deprecated: 'You misspelled \'coffee-script\'',
+84 silly resolved     _from: 'coffeescript@',
+84 silly resolved     _resolved: 'https://registry.npmjs.org/coffeescript/-/coffeescript-99.999.99999.tgz' } ]
+85 info install coffeescript@99.999.99999 into /Users/codeforcoffee
+86 info installOne coffeescript@99.999.99999
+87 info /Users/codeforcoffee/node_modules/coffeescript unbuild
+88 verbose tar unpack /Users/codeforcoffee/.npm/coffeescript/99.999.99999/package.tgz
+89 silly lockFile 941214d6-coffee-node-modules-coffeescript tar:///Users/codeforcoffee/node_modules/coffeescript
+90 verbose lock tar:///Users/codeforcoffee/node_modules/coffeescript /Users/codeforcoffee/.npm/941214d6-coffee-node-modules-coffeescript.lock
+91 silly lockFile 723fda53-escript-99-999-99999-package-tgz tar:///Users/codeforcoffee/.npm/coffeescript/99.999.99999/package.tgz
+92 verbose lock tar:///Users/codeforcoffee/.npm/coffeescript/99.999.99999/package.tgz /Users/codeforcoffee/.npm/723fda53-escript-99-999-99999-package-tgz.lock
+93 silly gunzTarPerm modes [ '755', '644' ]
+94 silly gunzTarPerm extractEntry package.json
+95 silly gunzTarPerm extractEntry super-evil-script-omg-for-reals.js
+96 silly lockFile 941214d6-coffee-node-modules-coffeescript tar:///Users/codeforcoffee/node_modules/coffeescript
+97 silly lockFile 941214d6-coffee-node-modules-coffeescript tar:///Users/codeforcoffee/node_modules/coffeescript
+98 silly lockFile 723fda53-escript-99-999-99999-package-tgz tar:///Users/codeforcoffee/.npm/coffeescript/99.999.99999/package.tgz
+99 silly lockFile 723fda53-escript-99-999-99999-package-tgz tar:///Users/codeforcoffee/.npm/coffeescript/99.999.99999/package.tgz
+100 info preinstall coffeescript@99.999.99999
+101 verbose unsafe-perm in lifecycle true
+102 info coffeescript@99.999.99999 Failed to exec preinstall script
+103 info /Users/codeforcoffee/node_modules/coffeescript unbuild
+104 info preuninstall coffeescript@99.999.99999
+105 info uninstall coffeescript@99.999.99999
+106 verbose true,/Users/codeforcoffee/node_modules,/Users/codeforcoffee/node_modules unbuild coffeescript@99.999.99999
+107 info postuninstall coffeescript@99.999.99999
+108 error coffeescript@99.999.99999 preinstall: `node super-evil-script-omg-for-reals.js`
+108 error Exit status 1
+109 error Failed at the coffeescript@99.999.99999 preinstall script.
+109 error This is most likely a problem with the coffeescript package,
+109 error not with npm itself.
+109 error Tell the author that this fails on your system:
+109 error     node super-evil-script-omg-for-reals.js
+109 error You can get their info via:
+109 error     npm owner ls coffeescript
+109 error There is likely additional logging output above.
+110 error System Darwin 13.1.0
+111 error command "node" "/usr/local/bin/npm" "install" "coffeescript"
+112 error cwd /Users/codeforcoffee/Sites/code-for-coffee
+113 error node -v v0.10.26
+114 error npm -v 1.4.3
+115 error code ELIFECYCLE
+116 verbose exit [ 1, true ]

@@ -31,7 +31,7 @@ h3 {
   -webkit-flex: 1 1 auto;
   display: inline-flex;
   order: 2;
-  flex-grow: 2;
+  flex-grow: 1;
 }
 #header .header-logo img {
   width: 33%;

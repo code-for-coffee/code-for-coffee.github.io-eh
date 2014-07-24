@@ -2,7 +2,6 @@
 //	primary.scss
 //	Main Stylesheet file for the conversion.
 //
-
 @import url(http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Serif);
 
 $body-copy: 16ems;
@@ -70,7 +69,7 @@ h3 {
 	.logo {
 		float: left;
 		display: block;
-		width: 40%
+		width: 40%;
 		h2 {
 			margin-top: -5%;
 		}
@@ -78,7 +77,7 @@ h3 {
 	.social {
 		float: right;
 		display: block;
-		width: 40%
+		width: 40%;
 		ul {
 			list-style: none;
 			display: inline;

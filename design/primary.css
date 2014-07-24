@@ -26,12 +26,14 @@ h3 {
   #header .logo {
     float: left;
     display: block;
-    width: 40% h2;
-      width-margin-top: -5%; }
+    width: 40%; }
+    #header .logo h2 {
+      margin-top: -5%; }
   #header .social {
     float: right;
     display: block;
-    width: 40% ul;
-      width-list-style: none;
-      width-display: inline;
-      width-padding-right: 3%; }
+    width: 40%; }
+    #header .social ul {
+      list-style: none;
+      display: inline;
+      padding-right: 3%; }

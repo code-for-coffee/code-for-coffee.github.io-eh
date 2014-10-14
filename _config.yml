@@ -1,2 +1,9 @@
 pygments: true
 github: [Repository metadata]
+name: "Code for Coffee"
+description: "Development & Coffee"
+url: "http://0.0.0.0:4000"
+paginate: 8
+markdown: rdiscount
+permalink: pretty
+timezone: America_Chicago

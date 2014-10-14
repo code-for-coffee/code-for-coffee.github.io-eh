@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Code for Coffee</title>
+	<link rel="stylesheet" href="design/main.css" />
+	<script type="text/javascript" src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js"></script>
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone-min.js"></script>
+	<script type="text/javascript" src="js/app.router.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript">
+		app.init();
+		app.Controllers.init();
+	</script>
+</head>
+<body>
+	<header id="header">
+        <div class="header-logo">
+            <img src="design/img/logo.png" alt="codeforcoffee.org" />
+        </div>
+        <div class="header-right-float">Development</div>
+        <div class="header-left-float">Coffee</div>
+	</header>
+	<nav id="nav">
+        <ul>
+            <li>Blog</li>
+            <li>Contact</li>
+            <li>About</li>
+        </ul>
+	</nav>
+	<section>
+
+		<article>
+            {% highlight ruby linenos %}
+            def foo
+            puts 'foo'
+            end
+            {% endhighlight %}
+		</article>
+	</section>
+</body>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        App = {} || new object;
+        /* app root for history.start(); should be set as your MVC route */
+        App.MvcRoot = "/Home/Index/";
+        /* initialize Backbone history */
+        Backbone.history.start({
+            pushState: true,
+            root: App.MvcRoot
+        });
+        /* setup quick and simple Backbone Router */
+        App.Route = Backbone.Router.extend({
+            routes: {
+                "": "index",
+                "route" : "routeTest"
+            },
+            index: function(event) {
+                $("#content").html("Welcome to the home page");
+            },
+            routeTest: function(event) {
+                $("#content").html("Route Trigged.");
+            }
+        });
+        _.extend(Backbone.Router.prototype, {
+            initialize: function () {
+                /* check for route & navigate to it */
+                var pathName = window.location.pathname;
+                /* split the backbone route off of the entire URL passed on */
+                var route = pathName.split(App.MvcRoot)[1];
+                if (route != undefined && route != "") {
+                    route = "/" + route;
+                    /* trigger the index route first so users can hit the "back" button to go "home" */
+                    this.navigate("", { trigger: false });
+                    /* navigate to current route */
+                    this.navigate(route, { trigger: true });
+                }
+            }
+        });
+        /* init router */
+        var myRouter = new App.Route();
+    });
+    /* handle links in navbar - this is just a sample only */
+
+    </script>
+</html>

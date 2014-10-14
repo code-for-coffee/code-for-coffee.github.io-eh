@@ -1,0 +1,39 @@
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Serif);
+body {
+  color: #c6db9b;
+  font-size: 16rem;
+  font-family: "Droid Sans", sans-serif;
+  background: #141313 url("img/background_repeat.png") repeat; }
+
+h1 {
+  font-size: 300%;
+  font-weight: bold;
+  font-family: "Droid Serif", serif;
+  color: #c6db9b;
+  text-shadow: 0px 1px 0px #2e3324; }
+
+h2 {
+  font-size: 150%;
+  font-weight: bolder; }
+
+h3 {
+  font-size: 150%;
+  font-style: italic; }
+
+#header {
+  border: 1px dashed;
+  width: 95%; }
+  #header .logo {
+    float: left;
+    display: block;
+    width: 40%; }
+    #header .logo h2 {
+      margin-top: -5%; }
+  #header .social {
+    float: right;
+    display: block;
+    width: 40%; }
+    #header .social ul {
+      list-style: none;
+      display: inline;
+      padding-right: 3%; }

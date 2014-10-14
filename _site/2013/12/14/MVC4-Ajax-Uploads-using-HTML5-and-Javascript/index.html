@@ -1,0 +1,80 @@
+
+<header id="header" class="header-left-float">
+    <div class="header-logo">
+        <img src="design/img/logo.png" alt="codeforcoffee.org" />
+    </div>
+    <ul class="header-right-float">
+        <li>Blog</li>
+        <li>Contact</li>
+        <li>About</li>
+    </ul>
+</header>
+
+<p>This is a quick walkthrough showcasing how to use ASP.NET MVC4 to upload files via AJAX. You can take a look at the code on <a href="https://github.com/code-for-coffee/mvc4-html5-ajax-upload">github</a>. This functionality requires a current version of Firefox, Chrome, or Internet Explorer 10+.</p>
+
+<p>We'll begin with the controller. Your <code>controller.cs</code> file should have a new <strong>JsonResult</strong> to receive whatever you're uploading. Inside, you'll iterate through each Request.File sent to the server using the  <a href="http://msdn.microsoft.com/en-us/library/system.web.httppostedfile">HttpPostedFileBase</a> class.</p>
+
+<p><code></p>
+
+<p>[HttpPost]
+public JsonResult Upload()
+{
+for (int i = 0; i &lt; Request.Files.Count; i++) {
+// for each file being sent over...
+HttpPostedFileBase file = Request.Files[i];</p>
+
+<p>// Example of gathering information from each file
+int fileSize = file.ContentLength;
+string fileName = file.FileName;
+string mimeType = file.ContentType;</p>
+
+<p>// Open input stream
+System.IO.Stream fileContent = file.InputStream;</p>
+
+<p>// do stuff here
+// do.stuff.huzzah</p>
+
+<p>}
+// Return JSON
+return Json("Uploaded " + Request.Files.Count + " file(s)");
+}</p>
+
+<p></code></p>
+
+<p>Now, the fun part: the HTML5. First, you need to create a new <a href="https://developer.mozilla.org/en-US/docs/Web/API/FormData">FormData</a> object.</p>
+
+<p><code>
+var formdata = new FormData();
+</code></p>
+
+<p>Next, you'll iterate through each file.</p>
+
+<p><code>for (i = 0; i &lt; uploadedFiles.files.length; i++) {
+}
+</code>
+Inside of your loop, you can append each file to the FormData object.</p>
+
+<p><code></p>
+
+<p>formdata.append(uploadedFiles.files[i].name, uploadedFiles.files[i]);
+</code></p>
+
+<p>Finally, you can send the files over via a traditional Ajax call.</p>
+
+<p><code>
+var xhr = new XMLHttpRequest();
+xhr.open('POST', ajaxPostPath);
+xhr.send(formdata);
+xhr.onreadystatechange = function () {
+if (xhr.readyState == 4 &amp;&amp; xhr.status == 200) {
+document.getElementById(idToPlaceResponseText).innerHTML = xhr.responseText;
+}
+</code>
+That's it! Obviously, you can do some nifty stuff with the files if they're supported. The code on the github project is designed to upload only files that are an Image MIME type and display a preview inside of an &lt;code&gt;id&lt;/code&gt;.</p>
+
+
+<footer id="appFooter">
+    <div class="row">
+        <em>&copy; 2012 - 2014 <a href="mailto:james@codeforcoffee.org" target="_blank">James</a>.</em>
+    </div>
+</footer>

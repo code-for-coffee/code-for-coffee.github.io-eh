@@ -119,6 +119,14 @@
     margin-bottom: $spacing-unit / 2;
     padding-left: $spacing-unit / 2;
 }
+.footer-col-right {
+    float: right;
+    text-align: right;
+    margin-bottom: $spacing-unit / 2;
+    padding-left: $spacing-unit / 2;
+    // @extend %clearfix;
+
+}
 
 .footer-col-1 {
     width: -webkit-calc(35% - (#{$spacing-unit} / 2));
@@ -146,11 +154,39 @@
         width: -webkit-calc(100% - (#{$spacing-unit} / 2));
         width:         calc(100% - (#{$spacing-unit} / 2));
     }
+
+    // .footer-col-right {
+    //     float: right;
+    //     text-align: right;
+    //     margin-bottom: $spacing-unit / 2;
+    //     padding-left: $spacing-unit / 2;
+    // }
+}
+
+@include media-query($on-phablet) {
+    .footer-col-1,
+    .footer-col-2 {
+        width: -webkit-calc(50% - (#{$spacing-unit} / 2));
+        width:         calc(50% - (#{$spacing-unit} / 2));
+    }
+
+    .footer-col-3 {
+        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+        width:         calc(100% - (#{$spacing-unit} / 2));
+    }
+
+    .footer-col-right {
+        float: none;
+        text-align: left;
+        margin-bottom: $spacing-unit / 2;
+        padding-left: $spacing-unit / 2;
+    }
 }
 
 @include media-query($on-palm) {
-    .footer-col {
+    .footer-col,.footer-col-right {
         float: none;
+        text-align: left;
         width: -webkit-calc(100% - (#{$spacing-unit} / 2));
         width:         calc(100% - (#{$spacing-unit} / 2));
     }

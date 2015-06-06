@@ -1,0 +1,20 @@
+---
+layout: post
+title:  "WatchLab Respondent Portal"
+description: I used ASP.NET MVC 4, jQuery, Bootstrap, SQL Server, Sass/CSS3 to create a responsive user portal.
+date:   2014-04-01 10:34:07
+categories: asp.net mvc jquery sass css3
+---
+
+<img src="/img/watchlab.png" alt="Screenshot">
+
+**Technologies Used**
+
+- ASP.NET MVC to create CRUD and Ajax methods
+- jQuery for DOM manipulation/Ajax calls
+- Sass and CSS3 to build extensive breakpoints for responsive design
+- Microsoft SQL Server 2012 to store data
+
+**Live Application**
+
+<a href="https://signup.watchlab.com" target="_blank">https://signup.watchlab.com</a>

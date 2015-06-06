@@ -1,10 +1,12 @@
 ---
 layout: post
-title:  "Chicago Library Application"
+title:  "General Assembly Library Application"
 description: I used Backbone.js with Firebase and Github Authentication to create a check-in/out app for books.
 date:   2015-03-01 10:34:07
 categories: backbone sinatra firebase github boostrap
 ---
+
+<img src="/img/libraryapp.png" alt="Screenshot">
 
 **Technologies Used**
 

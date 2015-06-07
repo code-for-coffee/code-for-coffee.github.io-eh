@@ -6,7 +6,7 @@ date:   2012-12-01 10:34:07
 categories: php mysql PrestaShop smarty css3 paypal
 ---
 
-<img src="/img/HotelComputers.png" alt="Screenshot">
+<img src="/img/hotelcomputers.png" alt="Screenshot">
 
 **Technologies Used**
 
@@ -18,4 +18,4 @@ categories: php mysql PrestaShop smarty css3 paypal
 
 **Live Application**
 
-<a href="http://hotelcomputers.com" target="_blank">http://hotelcomputers.com</a>
+<a href="http://hotelcomputers.com" target="_blank">http://hotelcomputers.com tri</a>

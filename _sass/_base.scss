@@ -13,16 +13,24 @@ dl, dd, ol, ul, figure {
 /**
  * Basic styling
  */
+
+ html {
+
+ }
+
+
 body {
     font-family: $base-font-family;
     font-size: $base-font-size;
     line-height: $base-line-height;
     font-weight: 300;
     color: $text-color;
-    background-color: $background-color;
-    -webkit-text-size-adjust: 100%;
+    background: url(/img/whispy-dev-background.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;    -webkit-text-size-adjust: 100%;
 }
-
 
 
 /**

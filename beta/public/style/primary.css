@@ -1,12 +1,40 @@
 @import url("http://fonts.googleapis.com/css?family=Open+Sans");
 body {
-  font-family: Open Sans, Arial, sans-serif; }
+  font-family: Open Sans, Arial, sans-serif !important;
+  background: #fdf6e9 !important; }
 
 h1, h3 {
-  color: rba(143, 31, 31, 1); }
+  color: #8f1f1f !important; }
 
 h2, h4 {
-  color: #541917; }
+  color: #541917 !important; }
 
 h5, h6 {
-  color: #381e1d; }
+  color: #381e1d !important; }
+
+a, a:active {
+  color: #541917 !important; }
+
+a:hover, a:visited {
+  color: #8f1f1f !important; }
+
+strong {
+  color: #8f1f1f !important; }
+
+em {
+  color: #8f1f1f !important; }
+
+.header {
+  height: 16rem;
+  text-align: center; }
+  .header img {
+    max-height: 100%;
+    max-width: 100%; }
+
+.panel {
+  border-style: none !important;
+  border-width: 0px;
+  margin-bottom: 1.25rem;
+  padding: 1.25rem;
+  background: #fdf6e9 !important;
+  color: #541917; }

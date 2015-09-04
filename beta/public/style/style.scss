@@ -4,19 +4,56 @@ $body-copy: Open Sans, Arial, sans-serif;
 
 $deepred: rgba(84,25,23,1);
 $cakedbrick: rgba(56,30,29,1);
-$accent: rba(143,31,31,1);
-$sand: rgba(249,237,214,1);
+$accent: rgba(143,31,31,1);
+$sand: rgba(253,246,233,1);
 
 body {
-  font-family: $body-copy;
+  font-family: $body-copy !important;
+  background: $sand !important;
 }
 
 h1,h3 {
-  color: $accent;
+  color: $accent !important;
 }
 h2,h4 {
-  color: $deepred;
+  color: $deepred !important;
 }
 h5, h6 {
-  color: $cakedbrick;
+  color: $cakedbrick !important;
+}
+
+a,a:active {
+  color: $deepred !important;
+}
+a:hover,a:visited {
+  color: $accent !important;
+}
+
+strong {
+  color: $accent !important;
+}
+em {
+  color: $accent !important;
+}
+
+.header {
+
+  height: 16rem;
+
+  text-align: center;
+
+  img {
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+}
+
+.panel {
+    border-style: none !important;
+    border-width: 0px;
+    margin-bottom: 1.25rem;
+    padding: 1.25rem;
+    background: $sand !important;
+    color: $deepred;
 }
